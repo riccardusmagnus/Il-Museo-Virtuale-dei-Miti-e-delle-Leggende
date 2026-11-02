@@ -6,60 +6,75 @@
     <title>La mitologia norrena</title>
     
     <style>
+        .scheda img {
+            width: 130px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+            margin: 10px auto;
+            border: 1px solid #38bdf8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
         * {
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
 
-        /* STILE GENERALE NORRENO (BLU GHIACCIO, ACCIAIO, ARGENTO E ROCCIA) */
+        /* STILE GENERALE NORRENO (BLU NORDICO, ACCIAIO, ARGENTO E BRINA - TONI FREDDI VICHINGHI) */
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #d1e8e2; /* Grigio-blu freddo chiaro */
-            background-color: #0b131e; /* Fondo notte polare scurissimo */
+            color: #e2e8f0; /* Argento / Brina chiara */
+            background-color: #0b1120; /* Fondo notte artica scurissima */
         }
 
         header {
             padding: 40px 20px;
             text-align: center;
-            border-bottom: 3px solid #4a6fa5; /* Acciaio / Blu norreno */
-            background-color: #111c2e;
-            background-image: radial-gradient(circle at top, #1a2a40 0%, #0b131e 100%);
+            border-bottom: 3px solid #38bdf8; /* Blu ghiaccio/rune */
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at top, #1e293b 0%, #0b1120 100%);
         }
 
         h1, h2, h3 {
-            color: #79bac1; /* Blu ghiaccio / Cristallo */
-            font-family: 'Georgia', serif;
-            letter-spacing: 0.5px;
+            color: #38bdf8; /* Blu ghiaccio runico */
+            font-family: Georgia, serif;
         }
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
-            text-shadow: 0 0 10px rgba(121, 186, 193, 0.3);
+            text-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+        }
+
+        header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
         }
 
         nav {
             padding: 15px;
             text-align: center;
-            border-bottom: 2px solid #4a6fa5;
-            background-color: #0e1726;
+            border-bottom: 2px solid #38bdf8;
+            background-color: #0f172a;
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
         nav a {
-            margin: 8px 12px;
-            color: #9fa8a3;
+            margin: 10px;
+            color: #38bdf8;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         nav a:hover {
-            color: #79bac1;
+            color: #f59e0b; /* Accento ambra runica */
             text-decoration: underline;
         }
 
@@ -75,19 +90,19 @@
 
         h2 {
             text-align: center;
-            border-bottom: 2px solid #4a6fa5;
+            border-bottom: 2px solid #38bdf8;
             padding-bottom: 10px;
-            color: #79bac1;
+            color: #38bdf8;
         }
 
         .introduzione, .storia, .scheda {
             padding: 20px;
             margin-bottom: 20px;
-            border: 2px solid #3b5278; /* Bordi in acciaio scuro */
+            border: 2px solid #38bdf8; /* Bordi blu runico */
             border-radius: 8px;
-            background-color: #111c2e; /* Sfondo dei box color blu notte/roccia */
-            color: #d1e8e2;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            background-color: #1e293b; /* Sfondo dei box color notte scura/roccia */
+            color: #e2e8f0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
         .griglia {
@@ -96,43 +111,34 @@
             gap: 15px;
         }
 
-        .scheda {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .scheda h3 {
+            margin-top: 0;
+            color: #38bdf8;
             text-align: center;
         }
 
-        .scheda svg, .scheda img {
-            width: 130px;
-            height: 140px;
-            object-fit: contain;
-            border-radius: 8px;
-            display: block;
-            margin: 10px auto;
-            background-color: #0b131e;
-            padding: 10px;
-            border: 1px solid #3b5278;
-        }
-
-        .scheda h3 {
-            margin-top: 10px;
-            margin-bottom: 8px;
-            color: #79bac1;
-        }
-
         .scheda p {
+            text-align: center;
             font-size: 0.95rem;
-            margin: 0;
+        }
+
+        .immagine-banner {
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #38bdf8;
+            margin: 15px 0 25px 0;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
         }
 
         footer {
             padding: 20px;
             text-align: center;
-            border-top: 3px solid #4a6fa5;
-            background-color: #0e1726;
-            color: #79bac1;
-            margin-top: 20px;
+            border-top: 3px solid #38bdf8;
+            background-color: #0f172a;
+            color: #38bdf8;
+            margin-top: 30px;
         }
 
         @media (max-width: 600px) {
@@ -152,11 +158,11 @@
 
 <header>
     <h1>La mitologia norrena</h1>
-    <p>Un viaggio tra gli dèi, le rune e i nove mondi dell'antico Nord.</p>
+    <p>Un viaggio tra gli dèi, i miti e i nove mondi della tradizione nordica.</p>
 </header>
 
 <nav>
-    <a href="#">Home</a>
+    <a href="Index.html">Home</a>
     <a href="#dei">I 12 dèi</a>
     <a href="#odino">Odino</a>
     <a href="#creazione">La creazione</a>
@@ -169,17 +175,19 @@
 
     <section>
         <div class="introduzione">
-            <h2>Il mondo dei miti nordici</h2>
+            <h2>Il mondo dei miti norreni</h2>
             <p>
-                La mitologia norrena racchiude le antiche leggende dei popoli germanici e vichinghi, nate tra i ghiacci e i fiordi del nord Europa. 
-                È un universo dominato dal grande frassino Yggdrasil, da divinità guerriere, giganti di brina e creature magiche, costantemente teso verso l'inevitabile scontro finale del Ragnarök.
+                La mitologia norrena raccoglie storie millenarie dedicate a divinità guerriere, 
+                misteriose rune e grandi battaglie cosmiche legate all'inevitabile scontro del Ragnarök. 
+                Questi racconti spiegavano la nascita dell'universo dal ghiaccio e dal fuoco, il ciclo delle stagioni 
+                e le leggi di onore e coraggio che guidavano i guerrieri del nord.
             </p>
         </div>
     </section>
 
     <section id="dei">
         <h2>Le 12 divinità principali</h2>
-        
+        <img class="immagine-banner" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Norse_gods_by_Lorenz_Fr%C3%B8lich.jpg/800px-Norse_gods_by_Lorenz_Fr%C3%B8lich.jpg" alt="Divinità della mitologia norrena">
         <style>
           #dei {
             text-align: center;
@@ -188,133 +196,85 @@
 
         <div class="griglia">
             <article class="scheda">
-                <!-- Icona/Simbolo Odino -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <circle cx="50" cy="50" r="42" stroke="#4a6fa5"/>
-                    <path d="M50 18 L50 82 M25 35 L75 35 M30 65 L70 65 M35 50 L65 50" />
-                    <circle cx="50" cy="35" r="4" fill="#79bac1"/>
-                </svg>
                 <h3>Odino</h3>
-                <p>Padre di tutti gli dèi, signore della guerra, della sapienza e della magia runica.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Odin%2C_der_G%C3%B6tternvater_by_Carl_Emil_Doepler.jpg/500px-Odin%2C_der_G%C3%B6tternvater_by_Carl_Emil_Doepler.jpg" alt="Odino - Re di Asgard">
+                <p>Padre di tutti gli dèi, dio della guerra, della sapienza e delle rune.</p>
             </article>
 
             <article class="scheda">
-                <!-- Icona Mjolnir per Thor -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <rect x="25" y="25" width="50" height="25" rx="3" fill="#1b2a4a" stroke="#79bac1"/>
-                    <rect x="45" y="50" width="10" height="35" rx="2" fill="#79bac1"/>
-                    <path d="M20 37 L25 37 M75 37 L80 37"/>
-                </svg>
                 <h3>Thor</h3>
-                <p>Dio del tuono, della forza e della tempesta, protettore di Asgard e degli uomini col suo martello Mjolnir.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/M%C3%A5rten_Eskil_Winge_-_Tors_strid_med_j%C3%A4ttarna_%281872%29.jpg/500px-M%C3%A5rten_Eskil_Winge_-_Tors_strid_med_j%C3%A4ttarna_%281872%29.jpg" alt="Thor - Dio del Tuono">
+                <p>Dio del tuono, della forza e protettore degli uomini con il suo martello Mjolnir.</p>
             </article>
 
             <article class="scheda">
-                <!-- Icona Freya -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <polygon points="50,15 85,80 15,80" fill="#1b2a4a" stroke="#79bac1"/>
-                    <circle cx="50" cy="50" r="12" fill="#79bac1"/>
-                </svg>
-                <h3>Freya</h3>
-                <p>Dea dell'amore, della bellezza, della fertilità e regina della magia Seidr.</p>
-            </article>
-
-            <article class="scheda">
-                <!-- Icona Loki -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <path d="M30 75 Q 20 20 50 20 Q 80 20 70 75 Z" fill="#1b2a4a"/>
-                    <path d="M25 35 Q 10 10 40 25 M75 35 Q 90 10 60 25"/>
-                </svg>
                 <h3>Loki</h3>
-                <p>Dio dell'inganno, del fuoco e del mutamento, oratore astuto e causa di grandi disgrazie.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Loki_begins_to_work_his_evil_by_Carl_Emil_Doepler.jpg/500px-Loki_begins_to_work_his_evil_by_Carl_Emil_Doepler.jpg" alt="Loki - Dio dell'Inganno">
+                <p>Dio dell'inganno, del fuoco e della metamorfosi, causa di discordia tra gli dèi.</p>
             </article>
 
             <article class="scheda">
-                <!-- Icona Frigg -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <circle cx="50" cy="50" r="30" stroke="#79bac1"/>
-                    <path d="M50 20 L50 80 M20 50 L80 50"/>
-                </svg>
+                <h3>Freya</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Freyja_by_Penrose.jpg/500px-Freyja_by_Penrose.jpg" alt="Freya - Dea dell'Amore e della Magia">
+                <p>Dea dell'amore, della bellezza, della fertilità e della magia Seidr.</p>
+            </article>
+
+            <article class="scheda">
                 <h3>Frigg</h3>
-                <p>Regina degli Aesir, sposa di Odino e dea del matrimonio, della profezia e della maternità.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Frigg_spinning_the_clouds.jpg/500px-Frigg_spinning_the_clouds.jpg" alt="Frigg - Regina degli Aesir">
+                <p>Regina degli dèi, moglie di Odino, dea del matrimonio e della profezia.</p>
             </article>
 
             <article class="scheda">
-                <!-- Icona Baldr -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <circle cx="50" cy="50" r="25" fill="#79bac1"/>
-                    <path d="M50 10 L50 20 M50 80 L50 90 M10 50 L20 50 M80 50 L90 50"/>
-                </svg>
                 <h3>Baldr</h3>
-                <p>Dio della luce, della bellezza, dell'innocenza e della virtù, amato da tutte le creature.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Death_of_Balder_by_Eckersberg_1817.jpg/500px-The_Death_of_Balder_by_Eckersberg_1817.jpg" alt="Baldr - Dio della Luce">
+                <p>Dio della luce, della bellezza, della bontà e dell'innocenza.</p>
             </article>
 
             <article class="scheda">
-                <!-- Icona Heimdall -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <path d="M30 30 C 30 70, 70 70, 70 30 L 60 30 C 60 60, 40 60, 40 30 Z" fill="#1b2a4a"/>
-                    <path d="M50 65 L50 85 M40 85 L60 85"/>
-                </svg>
                 <h3>Heimdall</h3>
-                <p>Il guardiano del ponte Bifröst, dotato di vista e udito prodigiosi, custode del corno Gjallarhorn.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Heimdallr_by_Doepler.jpg/500px-Heimdallr_by_Doepler.jpg" alt="Heimdall - Guardiano di Bifrost">
+                <p>Custode del ponte Bifröst e avvisatore del Ragnarök con il corno Gjallarhorn.</p>
             </article>
 
             <article class="scheda">
-                <!-- Icona Tyr -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <path d="M50 80 L50 20 M50 20 L30 40 M50 20 L70 40"/>
-                </svg>
                 <h3>Tyr</h3>
-                <p>Dio della guerra d'onore, della legge e della giustizia, famoso per il suo sacrificio contro il lupo Fenrir.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tyr_and_Fenrir.jpg/500px-Tyr_and_Fenrir.jpg" alt="Tyr - Dio della Giustizia">
+                <p>Dio della guerra giusta, dell'onore e del diritto divino.</p>
             </article>
 
             <article class="scheda">
-                <!-- Icona Njord -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <path d="M20 60 Q 35 40 50 60 T 80 60 M20 40 Q 35 20 50 40 T 80 40"/>
-                </svg>
                 <h3>Njord</h3>
-                <p>Dio del mare, dei venti, della navigazione e della ricchezza, padre dei Vanir Freya e Freyr.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Njord_desiring_the_sea_by_W.G._Collingwood.jpg/500px-Njord_desiring_the_sea_by_W.G._Collingwood.jpg" alt="Njord - Dio del Mare">
+                <p>Dio del mare, dei venti, della pesca e della ricchezza marina.</p>
             </article>
 
             <article class="scheda">
-                <!-- Icona Idunn -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <circle cx="50" cy="55" r="22" fill="#1b2a4a" stroke="#79bac1"/>
-                    <path d="M50 33 C 45 20, 55 20, 55 25 Q 65 25, 50 33"/>
-                </svg>
                 <h3>Idunn</h3>
-                <p>Custode delle mele magiche della giovinezza, grazie a cui gli dèi mantengono l'immortalità.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Idun_and_the_Apples_by_Doyle.jpg/500px-Idun_and_the_Apples_by_Doyle.jpg" alt="Idunn - Custode della Giovinezza">
+                <p>Custode delle mele d'oro che donano eterna giovinezza agli dèi.</p>
             </article>
 
             <article class="scheda">
-                <!-- Icona Hel -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <path d="M20 20 L80 80 M80 20 L20 80" stroke="#4a6fa5"/>
-                    <circle cx="50" cy="50" r="20" fill="#0b131e"/>
-                </svg>
                 <h3>Hel</h3>
-                <p>Dea del regno dei morti (Helheim), figlia di Loki, dal corpo metà vivo e metà decomposto.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Hel_by_Johannes_Gehrts.jpg/500px-Hel_by_Johannes_Gehrts.jpg" alt="Hel - Regina degli Inferi">
+                <p>Dea del regno dei morti e sovrana delle anime non cadute in battaglia.</p>
             </article>
 
             <article class="scheda">
-                <!-- Icona Bragi -->
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2.5">
-                    <path d="M35 25 L35 75 C 35 85, 65 85, 65 75 L65 25 Z" fill="#1b2a4a"/>
-                    <path d="M35 40 L65 40 M35 55 L65 55 M35 70 L65 70"/>
-                </svg>
                 <h3>Bragi</h3>
-                <p>Dio della poesia, dell'eloquenza e della musica, consorte di Idunn e saggio cantore di Asgard.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Bragi_singing_by_Carl_Wahlbom.jpg/500px-Bragi_singing_by_Carl_Wahlbom.jpg" alt="Bragi - Dio della Poesia">
+                <p>Dio dell'eloquenza, della musica e della poesia scalpica.</p>
             </article>
         </div>
     </section>
 
     <section id="odino">
-        <h2>Il viaggio e la sapienza di Odino</h2>
+        <h2>Il viaggio del dio Odino</h2>
         <article class="storia">
-            <p>Odino, sovrano di Asgard, non era solo un dio guerriero, ma un eterno ricercatore della conoscenza assoluta. Per comprendere i segreti più reconditi del cosmo e prevenire il destino fatale del Ragnarök, non esitò a compiere enormi sacrifici personali.</p>
-            <p>Nel suo viaggio verso la fonte di Mímir, situata sotto le radici del grande frassino Yggdrasil, Odino chiese di poter bere un sorso d'acqua per ottenere la conoscenza suprema. Il custode Mímir pretese un prezzo altissimo: il dio dovette cavarsi l'occhio destro e depositarlo nella fonte come zalda eterna.</p>
-            <p>Successivamente, Odino si appese a Yggdrasil trafitto dalla sua stessa lancia Gungnir per nove giorni e nove notti, senza cibo né acqua. Al termine di questa orribile prova, scorse nel profondo dell'abisso i simboli sacri delle Rune, apprendendone i poteri magici e donandole al genere umano.</p>
+            <p>Prima dell'inizio del tempo umano, Odino regnava su Asgard cercandone senza sosta la conoscenza profonda. Egli desiderava comprendere i segreti più oscuri del destino per proteggere l'universo dal temuto giorno del Ragnarök. Per ottenere questa saggezza, Odino intraprese un viaggio leggendario verso la fonte di Mímir, situata alle radici del grande frassino Yggdrasil.</p> 
+            <p>Giunto al cospetto del saggio Mímir, Odino chiese di poter bere dalle sue acque miracolose. Il prezzo preteso da Mímir fu alto e doloroso: Odino dovette sacrificare il suo stesso occhio destro, gettandolo nella fonte come pegno eterno. Da quel giorno, il re degli dèi vide il mondo con un occhio solo, ma ottenne una visione interiore infallibile e la capacità di scorgere il futuro.</p> 
+            <p>Non contento, Odino si appese al frassino Yggdrasil per nove giorni e nove notti, trafitto dalla propria lancia Gungnir. Attraverso questo sacrificio supremo scoprì le rune, i simboli magici della creazione, che donò agli uomini affinché potessero comunicare con gli spiriti e le forze della natura.</p>
         </article>
     </section>
 
@@ -323,53 +283,38 @@
         <div class="griglia">
             <article class="scheda">
                 <h3>Ginnungagap e il Caos</h3>
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2">
-                    <path d="M10 50 Q 50 10 90 50 Q 50 90 10 50 Z" fill="#0b131e"/>
-                </svg>
-                <p>Il grande baratro vuoto che separava il regno del fuoco (Muspelheim) dal regno del ghiaccio (Niflheim).</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Ginnungagap_by_Lorenz_Fr%C3%B8lich.jpg/500px-Ginnungagap_by_Lorenz_Fr%C3%B8lich.jpg" alt="Ginnungagap">
+                <p>L'abisso vuoto che separava il ghiaccio di Niflheim dal fuoco di Muspelheim.</p>
             </article>
 
             <article class="scheda">
-                <h3>Ymir il Gigante Primordiale</h3>
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2">
-                    <circle cx="50" cy="40" r="20"/>
-                    <path d="M30 80 L70 80 M50 60 L50 90"/>
-                </svg>
-                <p>Il primo essere vivente nato dall'incontro tra il calore e il ghiaccio, dal cui corpo fu formato il mondo.</p>
+                <h3>Il Gigante Ymir</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Ymir_fed_by_Audhumla_by_Nicolai_Abildgaard.jpg/500px-Ymir_fed_by_Audhumla_by_Nicolai_Abildgaard.jpg" alt="Il Gigante Ymir">
+                <p>Il primo gigante nato dallo scontro tra il calore e il gelo primordiale.</p>
             </article>
 
             <article class="scheda">
-                <h3>Audhumla la Mucca Sacra</h3>
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2">
-                    <path d="M20 50 C 20 30, 80 30, 80 50 C 80 70, 20 70, 20 50 Z"/>
-                </svg>
-                <p>La creatura che nutrì Ymir e che leccando i blocchi di sale glaciale diede origine ai primi dèi.</p>
+                <h3>La Mucca Audhumla</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Audhumla_and_Buri_by_Nicolai_Abildgaard.jpg/500px-Audhumla_and_Buri_by_Nicolai_Abildgaard.jpg" alt="Audhumla">
+                <p>La creatura che nutrì Ymir e leccò i blocchi di ghiaccio dando forma a Búri.</p>
             </article>
 
             <article class="scheda">
-                <h3>Yggdrasil l'Albero del Mondo</h3>
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2">
-                    <path d="M50 90 L50 40 M50 40 L20 15 M50 40 L80 15 M50 60 L25 50 M50 60 L75 50"/>
-                </svg>
-                <p>L'immenso frassino cosmico che sostiene e collega i Nove Mondi dell'universo norreno.</p>
+                <h3>Il Primo Dio Búri</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Buri_licks_salt_by_Lorenz_Froelich.jpg/500px-Buri_licks_salt_by_Lorenz_Froelich.jpg" alt="Buri">
+                <p>L'antenato di tutti gli dèi Aesir emerso dal ghiaccio salato primordiale.</p>
             </article>
 
             <article class="scheda">
-                <h3>I Nove Mondi</h3>
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="1.5">
-                    <circle cx="50" cy="50" r="40"/>
-                    <circle cx="50" cy="50" r="25"/>
-                    <circle cx="50" cy="50" r="10" fill="#79bac1"/>
-                </svg>
-                <p>I reami di dèi, elfi, nani, giganti e uomini disposti lungo i rami e le radici di Yggdrasil.</p>
+                <h3>L'Albero Yggdrasil</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Yggdrasil_by_Oluf_Olufsen_Bagge.jpg/500px-Yggdrasil_by_Oluf_Olufsen_Bagge.jpg" alt="Yggdrasil">
+                <p>L'immenso frassino cosmico che sostiene e unisce i Nove Mondi.</p>
             </article>
 
             <article class="scheda">
                 <h3>Ask ed Embla</h3>
-                <svg viewBox="0 0 100 100" fill="none" stroke="#79bac1" stroke-width="2">
-                    <path d="M35 80 L35 30 M65 80 L65 30 M30 30 L40 30 M60 30 L70 30"/>
-                </svg>
-                <p>I primi due esseri umani scolpiti da Odino e dai suoi fratelli da due tronchi d'albero trovati sulla spiaggia.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ask_and_Embla_by_Robert_Engels.jpg/500px-Ask_and_Embla_by_Robert_Engels.jpg" alt="Ask e Embla">
+                <p>I primi esseri umani scolpiti dagli dèi a partire da due tronchi di legno.</p>
             </article>
         </div>
     </section>
@@ -377,24 +322,27 @@
     <section id="thor">
         <h2>La storia di Thor</h2>
         <article class="storia">
-            <p>Thor, figlio di Odino e della Terra (Jörð), era il più amato tra i protettori dell'umanità e di Asgard. Famoso per la sua forza prodigiosa, il suo carattere irascibile ma sincero, Thor difendeva il mondo dai Giganti di Brina con l'aiuto del suo leggendario martello Mjolnir, in grado di scagliare fulmini e di tornare sempre nella sua mano.</p>
-            <p>In una delle leggende più celebri, il gigante Thrym rubò il Mjolnir e pretese la mano della dea Freya come riscatto. Con l'astuzia di Loki, Thor si travestì da sposa e si recò nel regno dei giganti. Durante il banchetto nuziale, non appena il martello fu adagiato sul grembo della falsa sposa per benedire l'unione, Thor afferrò la sua arma e sconfisse tutti i giganti presenti.</p>
+            <p>Thor, figlio di Odino e della Dea della Terra, era il più celebre tra i difensori di Asgard e degli uomini. Famoso per la sua forza leggendaria e il suo appetito insaziabile, viaggiava sui cieli a bordo di un carro trainato da capre magiche, impugnando il leggendario martello Mjolnir forgia dai nani.</p> 
+            <p>In un racconto famoso, il re dei giganti Thrym rubò il Mjolnir e pretese in cambio la mano della bella dea Freya. Thor, guidato dalla furbizia di Loki, si travestì da sposa velata ed entrò nel regno dei giganti. Durante il banchetto delle nozze, quando il martello fu poggiato sulle sue ginocchia come benedizione, Thor rivelò la sua vera identità e sconfisse i giganti, recuperando la sua arma inviolabile.</p> 
+            <p>Il suo destino finale rimase legato al serpente gigante Jörmungandr, nemico giurato che affrontò più volte e contro cui si scontrò nella battaglia decisiva del Ragnarök.</p>
         </article>
     </section>
 
     <section id="loki">
         <h2>La storia di Loki</h2>
         <article class="storia">
-            <p>Loki era una figura complessa e ambigua: figlio di un gigante, divenne fratellastro di sangue di Odino per la sua intelligenza brillante. Spesso aiutava gli Aesir a risolvere problemi intricati con i suoi inganni, ma con il passare del tempo la sua natura perfida prese il sopravvento.</p>
-            <p>Il suo atto più imperdonabile fu l'architettare la morte di Baldr, il dio della luce. Sapendo che la pianta del vischio era l'unica cosa a non aver giurato di non nuocere a Baldr, Loki guidò la mano del dio cieco Höðr scagliando una freccia di vischio. Questo crimine portò alla sua definitiva prigionia e segnò l'inizio del Ragnarök, in cui Loki guiderà le forze del caos contro gli dèi.</p>
+            <p>Loki, figlio di giganti ma accolto tra gli dèi grazie al patto di sangue stretto con Odino, era una figura complessa ed enigmatica. Dotato del dono di mutare forma in animali e persone, le sue azioni oscillavano continuamente tra l'aiutare gli dèi e il tradirli per divertimento o malizia.</p>
+            <p>Il suo inganno più grave fu ordito contro Baldr, il dio più amato e splendente. Sapendo che il vischio era l'unica cosa al mondo che non aveva giurato di proteggere Baldr, Loki ingannò il dio cieco Höðr convincendolo a scagliare una freccia di vischio contro il fratello. La morte di Baldr segnò il punto di non ritorno e l'inizio della fine per il mondo nordico.</p>
+            <p>Come punizione, gli dèi lo incatenarono nelle caverne sotterranee sotto il veleno di un serpente, da cui si libererà soltanto durante il Ragnarök per guidare le navi dei morti contro Asgard.</p>
         </article>
     </section>
 
     <section id="freya"> 
         <h2>La storia di Freya</h2> 
         <article class="storia"> 
-            <p>Freya, appartenente alla stirpe dei Vanir e successivamente accolta tra gli Aesir, era la dea dell'amore, della passione, della magia Seidr e della morte in battaglia. Quando scendeva in guerra a bordo del suo carro trainato da due gatti alati, reclamava per sé la metà dei guerrieri caduti, portandoli nel suo splendido palazzo Folkvangr, mentre l'altra metà andava al Valhalla di Odino.</p> 
-            <p>Possedeva il mantello di piume di falco che le permetteva di volare attraverso tutti i Nove Mondi e la meravigliosa collana Brísingamen, simbolo di grande bellezza e potere spirituale. La sua profonda saggezza nell'arte della divinazione influenzò perfino Odino, a cui insegnò i segreti della magia dei Vanir.</p> 
+            <p>Freya era la più importante tra le dee della stirpe dei Vanir, poi accolta con onore tra gli Aesir. Dea dell'amore, del desiderio, dell'oro e della magia Seidr, possedeva la capacità di volare attraverso i nove mondi indossando il suo mantello di piume di falco.</p> 
+            <p>Quando scendeva in campo durante le battaglie a bordo del suo carro trainato da due grandi gatti, Freya aveva il diritto di scegliere per prima la metà dei guerrieri caduti da portare nel suo regno Folkvangr, mentre l'altra metà veniva destinata al Valhalla di Odino.</p> 
+            <p>Insegnò a Odino i riti sacri e la magia profonda e inventò l'uso delle lacrime d'oro rosso quando piangeva la lontananza del marito Óðr, rimanendo un simbolo imperituro di forza, indipendenza e passione.</p> 
         </article> 
     </section>
 

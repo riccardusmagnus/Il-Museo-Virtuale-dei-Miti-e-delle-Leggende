@@ -20,51 +20,47 @@
             scroll-behavior: smooth;
         }
 
-        /* STILE GENERALE COMPLETAMENTE RINNOVATO (TEMA EGIZIO / BRONZO) */
+        /* STILE GENERALE EGIZIO (BRONZO, RAME E SABBIA - NIENTE ORO/GIALLO GRECO) */
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font più moderno */
-            line-height: 1.7;
-            color: #f4d06f; /* Testo color sabbia/ambra */
-            background-color: #0b0907; /* Sfondo deserto notturno molto scuro */
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #f4d06f; /* Sabbia calda */
+            background-color: #120d08; /* Marrone deserto scurissimo */
         }
 
         header {
-            padding: 45px 20px;
+            padding: 40px 20px;
             text-align: center;
-            border-bottom: 3px solid #cd7f32; /* Bordo color bronzo */
-            background: linear-gradient(to bottom, #1c140d, #0b0907);
+            border-bottom: 3px solid #cd7f32; /* Bronzo */
+            background-color: #1b120a;
         }
 
         h1, h2, h3 {
-            color: #e59866; /* Colore rame/terracotta calda */
-            font-family: 'Times New Roman', Times, serif;
+            color: #e59866; /* Rame / terracotta */
+            font-family: Georgia, serif;
         }
 
         h1 {
-            font-size: 2.8rem;
-            letter-spacing: 2px;
-            color: #f39c12;
+            font-size: 2.5rem;
         }
 
         nav {
             padding: 15px;
             text-align: center;
             border-bottom: 2px solid #cd7f32;
-            background-color: #140f0a;
+            background-color: #160e07;
         }
 
         nav a {
-            margin: 12px;
-            color: #f4d06f;
+            margin: 10px;
+            color: #e59866;
             text-decoration: none;
             font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.9rem;
         }
 
         nav a:hover {
-            color: #e59866;
+            color: #f4d06f;
             text-decoration: underline;
         }
 
@@ -75,26 +71,23 @@
         }
 
         section {
-            padding: 35px 20px;
-            margin: 30px 0;
-            border-radius: 10px;
-            background-color: #120e0a;
-            border: 1px solid #cd7f32; /* Cornice in bronzo per tutte le sezioni */
+            padding: 30px 0;
         }
 
         h2 {
             text-align: center;
             border-bottom: 2px solid #cd7f32;
-            padding-bottom: 12px;
-            margin-top: 0;
+            padding-bottom: 10px;
+            color: #e59866;
         }
 
         .introduzione, .storia, .scheda {
             padding: 20px;
             margin-bottom: 20px;
+            border: 2px solid #cd7f32; /* Bordi in bronzo */
             border-radius: 8px;
-            background-color: #18120d;
-            border: 1px solid #a0522d; /* Bordo color terra bruciata */
+            background-color: #1b120a; /* Sfondo dei box color terra/sabbia scura */
+            color: #f4d06f;
         }
 
         .griglia {
@@ -105,22 +98,22 @@
 
         .scheda h3 {
             margin-top: 0;
-            color: #f39c12;
+            color: #e59866;
         }
 
         footer {
-            padding: 25px;
+            padding: 20px;
             text-align: center;
             border-top: 3px solid #cd7f32;
-            background-color: #140f0a;
-            color: #cd7f32;
-            margin-top: 40px;
+            background-color: #1b120a;
+            color: #e59866;
         }
 
         @media (max-width: 600px) {
             h1 {
                 font-size: 2rem;
             }
+
             nav a {
                 display: inline-block;
             }

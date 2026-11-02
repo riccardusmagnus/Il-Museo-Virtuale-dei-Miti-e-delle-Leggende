@@ -1,1 +1,350 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mitologia egizia</title>
+   
+    <style>
+   .scheda img {
+    width: 130px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
 
+    * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: gold;
+            background-color: black;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid gold;
+        }
+
+        h1, h2, h3 {
+            color: gold;
+            font-family: Georgia, serif;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid gold;
+        }
+
+        nav a {
+            margin: 10px;
+            color: gold;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            padding: 30px 0;
+        }
+
+        h2 {
+            text-align: center;
+            border-bottom: 1px solid gold;
+            padding-bottom: 10px;
+        }
+
+        .introduzione, .storia, .scheda {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid gold;
+            border-radius: 8px;
+            background-color: black;
+        }
+
+        .griglia {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .scheda h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid gold;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>La mitologia egizia</h1>
+    <p>Un viaggio tra gli dèi, i miti e i simboli dell'antico Egitto.</p>
+</header>
+
+<nav>
+    <a href="#dei">I 12 dèi</a>
+    <a href="#ra">Ra</a>
+    <a href="#creazione">La creazione</a>
+    <a href="#osiride">Osiride</a>
+    <a href="#anubi">Anubi</a>
+    <a href="#iside">Iside</a>
+</nav>
+
+<main>
+
+    <section>
+        <div class="introduzione">
+            <h2>Il mondo dei miti egizi</h2>
+            <p>
+                La mitologia egizia raccoglie storie millenarie dedicate a divinità potenti,
+                misteri dell'aldilà e grandi lotte cosmiche. 
+                Questi racconti spiegavano il ciclo del sole, la fertilità della terra 
+                e le leggi che regolavano la vita e la morte.
+            </p>
+        </div>
+    </section>
+
+    <section id="dei">
+        <h2>Le 12 divinità principali</h2>
+        <img src="immagini/egizi-gen.jpg" alt="Divinità egizie">
+        <style>
+  #dei {
+    text-align: center;
+  }
+</style>
+
+        <div class="griglia">
+
+            <article class="scheda">
+                <h3>Ra</h3>
+                <p>Dio del sole, creatore di tutto e re degli dèi.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Osiride</h3>
+                <p>Signore dell'Oltretomba e giudice dei morti.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Iside</h3>
+                <p>Dea della magia, della maternità e della fedeltà.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Horus</h3>
+                <p>Dio falco del cielo e protettore dei faraoni.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Anubi</h3>
+                <p>Dio sciacallo della mummificazione e dei defunti.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Seth</h3>
+                <p>Dio del caos, del deserto e delle tempeste.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Thot</h3>
+                <p>Dio della sapienza, della scrittura e della luna.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Hathor</h3>
+                <p>Dea dell'amore, della musica, della gioia e della bellezza.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Sekhmet</h3>
+                <p>Dea leonessa della guerra e della potenza guaritrice.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Geb</h3>
+                <p>Dio primordiale della terra.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Nut</h3>
+                <p>Dea del cielo, madre delle stelle e del sole.</p>
+            </article>
+
+           <article class="scheda"> 
+                <h3>Bastet</h3> 
+                <p>Dea gatto protettrice della casa, della famiglia e dei gatti.</p> 
+            </article>
+
+        </div>
+    </section>
+
+    <section id="ra">
+        <h2>Il viaggio del dio Ra</h2>
+
+        <article class="storia">
+            <p>Prima dell'ordine del mondo, regnava l'oceano primordiale del caos. Da esso emerse Ra, il grande dio creatore, che con la sola forza della sua volontà diede vita all'aria, all'acqua e alla terraferma. Per illuminare la sua creazione, Ra decise di compiere ogni giorno un viaggio straordinario a bordo della sua barca celeste, attraversando la volta del cielo dall'alba al tramonto e portando calore e vita a tutto l'Egitto.</p> 
+
+<p>Tuttavia, il lavoro del re degli dèi non si fermava con la discesa della notte. Quando il sole tramontava, la barca solare di Ra entrava nel Duat, il misterioso e pericoloso regno sotterraneo dell'oltretomba. Qui il dio doveva affrontare ogni singola notte insidie terribili, tra cui il gigantesco serpente del caos Apep, che cercava con ogni mezzo di divorare la barca e spegnere per sempre la luce del sole.</p> 
+
+<p>Grazie all'aiuto di altre divinità protettrici che viaggiavano con lui, Ra riusciva sempre a sconfiggere o respingere il mostro prima dell'alba. Questa vittoria quotidiana rappresentava per gli Egizi la certezza assoluta che la luce avrebbe sempre trionfato sulle tenebre, che l'ordine avrebbe sconfitto il caos e che ogni notte sarebbe stata seguita da un nuovo risveglio.</p>
+
+<p>Il culto di Ra era strettamente legato al potere dei faraoni, i quali venivano considerati i suoi figli terreni e i suoi rappresentanti prediletti. Costruire enormi obelischi e templi rivolti verso oriente era il modo con cui il popolo e i sovrani onoravano la sua potenza creatrice, sperando di ottenere la sua benevolenza sia nella vita terrena che nell'eternità.</p>
+
+        </article>
+    </section>
+
+    <section id="creazione">
+    <h2>I miti della creazione egizia</h2>
+
+    <div class="griglia">
+
+        <article class="scheda">
+            <h3>Nun e il Caos</h3>
+            <img src="immagini/nun.jpg" alt="Nun">
+            <p>L'oceano primordiale infinito da cui tutto ebbe origine prima della luce.</p>
+        </article>
+
+        <article class="scheda">
+            <h3>La Collina Primordiale</h3>
+            <img src="immagini/collina.jpg" alt="Collina Primordiale">
+            <p>Il primo lembo di terra emerso dalle acque in cui gli dèi si manifestarono.</p>
+        </article>
+
+        <article class="scheda">
+            <h3>L'Uccello Bennu</h3>
+            <img src="immagini/bennu.jpg" alt="Bennu">
+            <p>La creatura sacra simile a un airone, simbolo di rinascita e primo raggio di sole.</p>
+        </article>
+
+        <article class="scheda">
+            <h3>Shu e Tefnut</h3>
+            <img src="immagini/shuteffnut.jpg" alt="Shu e Tefnut">
+            <p>Le prime divinità generate da Ra, rappresentanti l'aria secca e l'umidità.</p>
+        </article>
+
+        <article class="scheda">
+            <h3>Geb e Nut</h3>
+            <img src="immagini/gebnut.jpg" alt="Geb e Nut">
+            <p>La terra e il cielo, separati per sempre dal padre Shu per permettere la vita.</p>
+        </article>
+
+        <article class="scheda">
+            <h3>La nascita dell'uomo</h3>
+            <img src="immagini/uomo.jpg" alt="Uomo">
+            <p>Nati dalle lacrime di gioia di Ra cadute sulla terra fertile del Nilo.</p>
+        </article>
+
+    </div>
+</section>
+
+    <section id="osiride">
+        <h2>La storia di Osiride</h2>
+        <img src="immagini/osiride.jpg" alt="Osiride">
+        <style>
+  #osiride {
+    text-align: center;
+  }
+</style>
+        <article class="storia">
+           <div>
+  <p> Osiride un tempo regnava sull'Egitto come un sovrano saggio e generoso, insegnando agli uomini l'arte dell'agricoltura, le leggi civili e il rispetto per gli dèi. Sotto il suo governo la terra prosperava e regnava la pace, ma questa felicità scatenò la feroce gelosia di suo fratello Seth, dio del caos e della distruzione. </p> 
+  <p> Con un inganno crudele, Seth organizzò un complotto, intrappolò Osiride in un sarcofago perfetto e lo gettò nelle acque del fiume Nilo, uccidendolo. Successivamente ne fece a pezzi il corpo, disperdendone i frammenti in ogni angolo d'Egitto per impedire che potesse avere una sepoltura sacra e un riposo eterno. </p> 
+  <p> La moglie Iside, mossa da un amore smisurato e dotata di immensi poteri magici, viaggiò in lungo e in largo per raccogliere tutti i pezzi del marito. Con l'aiuto di Anubi, ricompose il corpo e lo rese il primo essere mummificato della storia, ottenendo il miracolo di riportarlo temporaneamente in vita. Non potendo più regnare tra i vivi, Osiride discese nell'Oltretomba, diventando il supremo giudice delle anime e il simbolo eterno della resurrezione e della rinascita della natura attraverso le piene del Nilo. </p>
+</div>
+
+        </article>
+    </section>
+
+    <section id="anubi">
+        <h2>La storia di Anubi</h2>
+        <img src="immagini/anubi.jpg" alt="Anubi">
+        <style>
+  #anubi {
+    text-align: center;
+  }
+</style>
+        <article class="storia">
+           <p>Anubi, la divinità dalla testa di sciacallo, era strettamente legato al mistero della morte e alla protezione delle necropoli. Secondo la tradizione mitologica, era figlio di Nefti e di Osiride, ed era stato allevato amorevolmente da Iside dopo la morte del padre. Grazie alla sua vicinanza alla famiglia reale degli dèi, Anubi divenne il custode ufficiale dei riti funebri.
+</p>
+
+<p>
+Il suo compito più importante e temuto si svolgeva nella Sala delle Due Verità, il tribunale divino dell'aldilà. Quando l'anima di un defunto giungeva al cospetto degli dèi, Anubi accompagnava con delicatezza il cuore del defunto e lo posizionava su un piatto di una grande bilancia d'oro.
+</p>
+
+<p>
+Sul piatto opposto della bilancia veniva posta la piuma della dea Maat, che rappresentava la verità, la giustizia e l'armonia cosmica. Se il cuore del defunto era leggero e puro, non appesantito da cattive azioni commesse in vita, la bilancia rimaneva in perfetto equilibrio.
+</p>
+
+<p>
+A quel punto Anubi presentava l'anima vittoriosa a Osiride, permettendole di accedere ai Campi Iaru, un paradiso eterno ricco di abbondanza e pace. Se invece il cuore risultava corrotto e pesante, veniva immediatamente divorato da una fiera mostruosa, condannando l'anima alla cancellazione definitiva.
+</p>
+
+<p>
+Grazie a questo ruolo fondamentale, Anubi era il dio più invocato durante i processi di mummificazione, poiché i sacerdoti indossavano maschere con le sue sembianze per guidare e proteggere il corpo del defunto nel suo viaggio verso l'eternità.
+</p>
+        </article>
+    </section>
+
+<section id="iside"> 
+  <h2>La storia di Iside</h2> 
+  <img src="immagini/iside.jpg" alt="Iside"> 
+  <style> 
+    #iside { 
+      text-align: center; 
+    } 
+  </style> 
+  <article class="storia"> 
+    <p>Iside era considerata la regina della magia, la dea della maternità e la protettrice di tutte le famiglie e dei naviganti. Dotata di un'intelligenza straordinaria e di poteri magici superiori a quelli di qualsiasi altro dio, era venerata in tutto il Mediterraneo antico come simbolo di devozione e forza femminile.</p> 
+    <p>La sua storia è indissolubilmente legata alla tragedia e alla rinascita di Osiride. Quando il marito fu tradito e ucciso da Seth, Iside non si lasciò abbattere dal dolore: trasformandosi in un falco protettivo, volò sopra le paludi del delta del Nilo alla ricerca dei frammenti del corpo perduto, dimostrando un coraggio senza eguali.</p> 
+    <p>Fu lei a inventare i primi riti di imbalsamazione e a ridare vita a Osiride attraverso la sua potente magia, proteggendo inoltre nel profondo delle paludi il loro giovane figlio Horus, affinché un giorno potesse vendicare il padre e riprendersi il trono legittimo d'Egitto.</p> 
+    <p>Inoltre, un celebre mito racconta di come Iside riuscì a ingannare il potentissimo Ra per carpire il suo nome segreto e ottenere così il controllo sui poteri supremi dell'universo, salvandolo però in cambio da un morso velenoso e dimostrandosi saggia oltre che potente.</p> 
+    <p>In questo modo, Iside divenne la madre divina per eccellenza, protettrice dei bambini, guaritrice dei malati e guida sicura per chiunque cercasse protezione contro le avversità della vita e della morte.</p> 
+  </article> 
+</section>
+
+</main>
+
+<footer>
+    <p>Progetto scolastico - La mitologia egizia</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mitologia greca</title>
+   
+}
+    <style>
+   .scheda img {
+    width: 130px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
+}
+    * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: gold;
+            background-color: black;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid gold;
+        }
+
+        h1, h2, h3 {
+            color: gold;
+            font-family: Georgia, serif;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid gold;
+        }
+
+        nav a {
+            margin: 10px;
+            color: gold;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            padding: 30px 0;
+        }
+
+        h2 {
+            text-align: center;
+            border-bottom: 1px solid gold;
+            padding-bottom: 10px;
+        }
+
+        .introduzione, .storia, .scheda {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid gold;
+            border-radius: 8px;
+            background-color: black;
+        }
+
+        .griglia {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .scheda h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid gold;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>La mitologia greca</h1>
+    <p>Un viaggio tra gli dèi, i mostri e gli eroi dell'antica Grecia.</p>
+</header>
+
+<nav>
+    <a href="#dei">I 12 dèi</a>
+    <a href="#zeus">Zeus</a>
+    <a href="#mostri">I mostri</a>
+    <a href="#medusa">Medusa</a>
+    <a href="#eracle">Eracle</a>
+     <a href="#persefone">Persefone</a>
+</nav>
+
+<main>
+
+    <section>
+        <div class="introduzione">
+            <h2>Il mondo dei miti greci</h2>
+            <p>
+                La mitologia greca raccoglie storie dedicate a divinità,
+                eroi, creature fantastiche e grandi avventure.
+                Questi racconti spiegavano la natura, le tradizioni
+                e le qualità umane.
+            </p>
+        </div>
+    </section>
+
+    <section id="dei">
+        <h2>I 12 dèi dell'Olimpo</h2>
+        <img src="download.jpg"" alt="Dei">
+        <style>
+  #dei {
+    text-align: center;
+  }
+</style>
+
+        <div class="griglia">
+
+            <article class="scheda">
+                <h3>Zeus</h3>
+                <p>Re degli dèi e signore del cielo e dei fulmini.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Era</h3>
+                <p>Regina degli dèi e dea del matrimonio e della famiglia.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Poseidone</h3>
+                <p>Dio del mare, dei terremoti e dei cavalli.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Demetra</h3>
+                <p>Dea dell'agricoltura e della fertilità della terra.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Atena</h3>
+                <p>Dea della saggezza e della strategia militare.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Apollo</h3>
+                <p>Dio della musica, della poesia e della profezia.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Artemide</h3>
+                <p>Dea della caccia e della natura.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Ares</h3>
+                <p>Dio della guerra e della battaglia.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Afrodite</h3>
+                <p>Dea dell'amore e della bellezza.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Efesto</h3>
+                <p>Dio del fuoco e della lavorazione dei metalli.</p>
+            </article>
+
+            <article class="scheda">
+                <h3>Ermes</h3>
+                <p>Messaggero degli dèi e protettore dei viaggiatori.</p>
+            </article>
+
+           <article class="scheda"> 
+    <h3>Estia</h3> 
+    <p>Dea del focolare domestico, dello stato e della famiglia.</p> 
+</article>
+
+
+        </div>
+    </section>
+
+    <section id="zeus">
+        <h2>Come Zeus salì al potere</h2>
+
+        <article class="storia">
+            <p>Prima dell'avvento degli dèi dell'Olimpo, l'universo era governato dai Titani, divinità primordiali nate dall'unione tra Urano (il Cielo) e Gea (La Terra). Il loro re, Crono, governava con pugno di ferro ed era tormentato da una terribile profezia: uno dei suoi stessi figli lo avrebbe spodestato, proprio come lui aveva fatto con suo padre. Per evitare questo destino, Crono decise di divorare vivi i suoi figli non appena la sposa Rea li dava alla luce. In questo modo trovarono prigionia nelle sue viscere Istia, Demetra, Era, Ade e Poseidone.</p> 
+
+<p>Disperata per la perdita della sua progenie, Rea decise di ribellarsi durante la sesta gravidanza. Si rifugiò segretamente sull'isola di Creta, dove partorì Zeus all'interno di una grotta sul monte Ida, affidandolo alle cure delle ninfe e della capra Amaltea. Per ingannare il marito, Rea avvolse in fasce una pesante pietra e la porse a Crono. Il sovrano dei Titani, accecato dalla paranoia, inghiottì il masso senza accorgersi dello stratagemma.</p> 
+
+<p>Divenuto adulto e consapevole del proprio destino, Zeus decise di compiere la sua vendetta. Con l'aiuto della titanide Meti, somministrò a Crono un potente emetico che lo costrinse a vomitare prima la pietra e poi, uno alla volta, tutti i fratelli e le sorelle precedentemente inghiottiti. Essendo divinità immortali, i fratelli erano cresciuti sani e salvi nel ventre paterno e, una volta liberati, si unirono immediatamente a Zeus in una coalizione votata al rovesciamento della vecchia guardia.</p>
+
+<p>Ebbe così inizio la Titanomachia, una guerra cosmica devastante che scosse l'universo per ben dieci anni. Per spezzare l'equilibrio delle forze in campo, Zeus scese nel Tartaro e liberò i Ciclopi e i Centimani (i giganti dalle cento braccia), che erano stati imprigionati da Crono. In segno di gratitudine, i Ciclopi – formidabili fabbri divini – forgiarono per gli dèi le loro armi leggendarie: il fulmine per Zeus, il tridente per Poseidone e l'elmo dell'oscurità per Ade. Grazie a questi alleati e alla potenza delle nuove armi, gli dèi olimpici schiacciarono i Titani, scaraventandoli nel Tartaro e incatenandoli nelle profondità degli inferi.</p>
+
+<p>Dopo la gloriosa vittoria, i tre principali fratelli dei si riunirono per ristabilire un ordine cosmico e si spartirono il dominio del mondo estraendo a sorte i rispettivi regni. Zeus ottenne il cielo, i fulmini e la sovranità assoluta, diventando il re degli dèi dall'alto del Monte Olimpo. Poseidone ricevette il dominio dei mari, degli oceani e il potere di scatenare i terremoti. Ade, infine, ereditò il mondo sotterraneo, diventando il sovrano supremo del regno delle ombre e delle anime dei defunti.</p>
+
+        </article>
+    </section>
+
+    <section id="mostri">
+    <h2>I sei mostri famosi</h2>
+
+    <div class="griglia">
+
+        <article class="scheda">
+            <h3>Medusa</h3>
+            <img src="Gorgon.jpg" alt="Medusa">
+            <p>Gorgone con serpenti al posto dei capelli e uno sguardo capace di pietrificare.</p>
+        </article>
+
+        <article class="scheda">
+            <h3>Minotauro</h3>
+            <img src="MINOTAURO.jpg" alt="Minotauro">
+            <p>Creatura con corpo umano e testa di toro che viveva nel labirinto.</p>
+        </article>
+
+        <article class="scheda">
+            <h3>Idra di Lerna</h3>
+            <img src="Idra.jpg" alt="Idra di Lerna">
+            <p>Mostro con molte teste che ricrescevano quando venivano tagliate.</p>
+        </article>
+
+        <article class="scheda">
+            <h3>Cerbero</h3>
+            <img src="Cerberus.jpg" alt="Cerbero">
+            <p>Cane a tre teste che sorvegliava il regno dei morti.</p>
+        </article>
+
+        <article class="scheda">
+            <h3>Chimera</h3>
+            <img src="Hellenic Chimera.jpg" alt="Chimera">
+            <p>Mostro formato da parti di leone, capra e serpente.</p>
+        </article>
+
+        <article class="scheda">
+            <h3>Scilla</h3>
+            <img src="Hex - Scylla, Sheppi.jpg" alt="Scilla">
+            <p>Mostro marino che attaccava le navi di passaggio.</p>
+        </article>
+
+    </div>
+</section>
+
+    <section id="medusa">
+        <h2>La storia di Medusa</h2>
+        <img src="perseo.jpg"" alt="Perseo">
+        <style>
+  #medusa {
+    text-align: center;
+  }
+</style>
+        <article class="storia">
+           <div>
+  <p> Medusa era una delle tre Gorgoni ed era l'unica mortale. Un tempo rinomata per la sua straordinaria bellezza, fu trasformata in un mostro terrificante con serpenti al posto dei capelli e uno sguardo capace di pietrificare chiunque osasse incrociare i suoi occhi. </p> 
+  <p> L'eroe Perseo, figlio di Zeus, ricevette l'incarico quasi impossibile di portarne la testa al tiranno Polidette. Grazie al prezioso aiuto degli dèi, tra cui lo scudo lucido donatogli da Atena, riuscì a orientarsi osservando soltanto il riflesso di Medusa senza mai guardarla direttamente. </p> 
+  <p> Cogliendola nel sonno, Perseo riuscì a sconfiggerla recidendole il capo con un falcetto adamantino; dal suo corpo nacquero il cavallo alato Pegaso e Crisaore. Infine, consegnò la testa alla dea Atena, che la incastonò sul proprio scudo per usarla come potente simbolo protettivo. </p>
+</div>
+
+        </article>
+    </section>
+
+    <section id="eracle">
+        <h2>La storia di Eracle</h2>
+ <img src="Ercole e le dodici fatiche.jpg"" alt="Ercole">
+        <style>
+  #eracle {
+    text-align: center;
+  }
+</style>
+        <article class="storia">
+           <p>Eracle, chiamato Ercole dai Romani, era figlio di Zeus,
+il re degli dèi, e della mortale Alcmena. Fin da piccolo
+dimostrò di possedere una forza straordinaria e un grande
+coraggio, diventando uno degli eroi più famosi della mitologia greca.
+</p>
+
+<p>
+Il re Euristeo gli affidò dodici imprese quasi impossibili,
+conosciute come le dodici fatiche di Eracle. Queste prove
+erano molto pericolose e richiedevano forza, intelligenza
+e astuzia per essere superate.
+</p>
+
+<p>
+Tra le sue imprese più famose ci furono la sconfitta
+del leone di Nemea, dalla pelle invulnerabile, l'uccisione
+dell'Idra di Lerna, un mostro con molte teste, e la cattura
+di Cerbero, il feroce cane a tre teste che custodiva
+il regno dei morti.
+</p>
+
+<p>
+Durante le sue avventure Eracle affrontò molti mostri,
+superò grandi pericoli e dimostrò sempre la sua forza
+e il suo coraggio. Grazie alle sue imprese diventò
+un eroe ammirato e conosciuto in tutto il mondo greco.
+</p>
+
+<p>
+Dopo una vita piena di avventure e fatiche, Eracle morì
+e fu accolto tra gli dèi dell'Olimpo da Zeus. In questo
+modo diventò immortale e venne ricordato come uno
+dei più grandi eroi della mitologia.
+</p>
+        </article>
+    </section>
+<section id="persefone"> 
+  <h2>La storia di Persefone</h2> 
+  <img src="persefone.jpg" alt="Persefone"> 
+  <style> 
+    #persefone { 
+      text-align: center; 
+    } 
+  </style> 
+  <article class="storia"> 
+    <p>Persefone, chiamata Proserpina dai Romani, era figlia di Zeus, il re degli dèi, e di Demetra, la dea dell'agricoltura e della fertilità. Era una giovane fanciulla amata da tutti per la sua grazia, la sua bellezza e la sua dolcezza.</p> 
+    <p>Un giorno, mentre raccoglieva fiori nei prati, la terra si aprì e Ade, il dio del regno dei morti, la rapì per portarla con sé negli Inferi e farne la sua sposa.</p> 
+    <p>Disperata per la scomparsa della figlia, Demetra smise di far crescere le piante e i frutti, portando sulla Terra un grande inverno e una terribile carestia. Per salvare il mondo, Zeus decise che Persefone avrebbe trascorso metà dell'anno negli Inferi con Ade e l'altra metà sulla Terra con la madre.</p> 
+    <p>Ogni volta che Persefone tornava sulla Terra, Demetra faceva rifiorire la primavera e l'estate; quando la fanciulla tornava negli Inferi, la natura si addormentava dando vita all'autunno e all'inverno.</p> 
+    <p>In questo modo, Persefone divenne sia la regina degli Inferi sia il simbolo del ciclo delle stagioni e della rinascita della natura.</p> 
+  </article> 
+</section>
+
+</main>
+
+
+
+</body>
+</html>

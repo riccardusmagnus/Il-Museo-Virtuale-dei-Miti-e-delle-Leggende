@@ -1,1 +1,89 @@
+/* ========================================== */
+/* 1. STILI GENERALI (Validi per tutto il sito) */
+/* ========================================== */
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0; /* Testo chiaro */
+    background-color: #121212; /* Sfondo scuro generale */
+}
+
+header {
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid gold;
+    background-color: #000000;
+}
+
+h1, h2, h3 {
+    color: gold;
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    padding: 30px 0;
+}
+
+/* ========================================== */
+/* 2. COMPONENTI COMUNI (Griglie e Schede)    */
+/* ========================================== */
+
+.griglia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.scheda {
+    padding: 20px;
+    border: 1px solid gold;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.scheda img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+/* ========================================== */
+/* 3. STILI SPECIFICI PER SEZIONE (Personalizzazioni) */
+/* ========================================== */
+
+/* Esempio: Se vuoi che la sezione dell'introduzione abbia un bordo o uno sfondo diverso */
+.introduzione {
+    padding: 20px;
+    border: 1px dashed gold; /* Bordo tratteggiato invece che continuo */
+    border-radius: 8px;
+    background-color: #1f1f1f;
+}
+
+/* Esempio: Se vuoi personalizzare in modo unico la sezione degli dèi egizi (Section 2) */
+#dei-egizi {
+    background-color: #18150f; /* Un colore leggermente ambrato/dorato scuro */
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+/* Puoi aggiungere qui sotto altri ID o classi per cambiare lo stile di qualsiasi altra sezione del tuo gruppo! */

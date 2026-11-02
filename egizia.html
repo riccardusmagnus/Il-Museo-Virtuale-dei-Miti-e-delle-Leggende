@@ -24,36 +24,36 @@
             margin: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #f3e5ab; /* Un oro più caldo/sabbia */
-            background-color: #0c0a08; /* Nero deserto / scuro */
+            color: #f3e5ab;
+            background-color: #0c0a08;
         }
 
         header {
             padding: 40px 20px;
             text-align: center;
-            border-bottom: 2px solid #d4af37;
-            background-color: #14100c;
+            border-bottom: 3px solid #d4af37;
+            background-color: #1a140d;
         }
 
         h1, h2, h3 {
-            color: #d4af37;
             font-family: Georgia, serif;
         }
 
         h1 {
             font-size: 2.5rem;
+            color: #ffd700;
         }
 
         nav {
             padding: 15px;
             text-align: center;
-            border-bottom: 1px solid #d4af37;
-            background-color: #0c0a08;
+            border-bottom: 2px solid #d4af37;
+            background-color: #14100c;
         }
 
         nav a {
             margin: 10px;
-            color: #d4af37;
+            color: #ffd700;
             text-decoration: none;
             font-weight: bold;
         }
@@ -68,16 +68,11 @@
             margin: auto;
         }
 
+        /* Stile di base per le sezioni */
         section {
-            padding: 30px 20px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-        }
-
-        h2 {
-            text-align: center;
-            border-bottom: 1px solid #d4af37;
-            padding-bottom: 10px;
+            padding: 35px 20px;
+            margin: 30px 0;
+            border-radius: 12px;
         }
 
         .introduzione, .storia, .scheda {
@@ -97,105 +92,135 @@
         }
 
         /* ========================================== */
-        /* STILI SPECIFICI E DIFFERENTI PER SEZIONE   */
+        /* STILI UNICI E DIFFERENTI PER OGNI SEZIONE  */
         /* ========================================== */
 
-        /* Sezione Introduzione: Tonalità sabbia scura */
+        /* 1. Introduzione: Sabbia scura e oro */
         .sezione-intro {
-            background-color: #1a140d;
+            background-color: #1c150c;
+            border: 2px solid #d4af37;
+        }
+        .sezione-intro h2 {
+            color: #ffd700;
+            text-align: center;
+            border-bottom: 1px solid #d4af37;
+            padding-bottom: 10px;
+        }
+        .sezione-intro .introduzione {
+            background-color: #140f08;
             border: 1px solid #c29b38;
+            color: #f3e5ab;
         }
 
-        /* Sezione Dei: Tonalità ambrata */
+        /* 2. Dei: Tonalità ambrata calda */
         #dei {
-            background-color: #1f170e;
-            border: 1px solid #d4af37;
+            background-color: #241a0e;
+            border: 2px solid #e67e22;
+        }
+        #dei h2 {
+            color: #f39c12;
             text-align: center;
+            border-bottom: 1px solid #e67e22;
+            padding-bottom: 10px;
         }
         #dei .scheda {
-            background-color: #140f08;
-            border: 1px solid #a67c1e;
+            background-color: #161008;
+            border: 1px solid #d35400;
+            color: #fdedec;
         }
 
-        /* Sezione Ra: Tonalità fuoco/sole */
+        /* 3. Ra: Tonalità fuoco / sole luminoso */
         #ra {
-            background-color: #21130a;
-            border: 1px solid #e06d16;
+            background-color: #2c160a;
+            border: 2px solid #ff5722;
         }
         #ra h2 {
-            border-bottom-color: #e06d16;
-            color: #f39c12;
+            color: #ff9800;
+            text-align: center;
+            border-bottom: 1px solid #ff5722;
+            padding-bottom: 10px;
         }
         #ra .storia {
-            background-color: #140a04;
-            border: 1px solid #e06d16;
-            color: #f5deb3;
+            background-color: #180c05;
+            border: 1px solid #e64a19;
+            color: #ffe0b2;
         }
 
-        /* Sezione Creazione: Tonalità pietra/deserto */
+        /* 4. Creazione: Tonalità pietra / azzurro fiume Nilo */
         #creazione {
-            background-color: #15181a;
-            border: 1px solid #4a768a;
+            background-color: #0f1c24;
+            border: 2px solid #00bcd4;
         }
         #creazione h2 {
-            border-bottom-color: #4a768a;
-            color: #5dade2;
+            color: #00e5ff;
+            text-align: center;
+            border-bottom: 1px solid #00bcd4;
+            padding-bottom: 10px;
         }
         #creazione .scheda {
-            background-color: #0b0d0e;
-            border: 1px solid #2980b9;
+            background-color: #071015;
+            border: 1px solid #00838f;
+            color: #e0f7fa;
         }
 
-        /* Sezione Osiride: Tonalità oltretomba verde/oro */
+        /* 5. Osiride: Tonalità oltretomba verde giada */
         #osiride {
-            background-color: #0d1a14;
-            border: 1px solid #27ae60;
+            background-color: #0b2218;
+            border: 2px solid #2ecc71;
         }
         #osiride h2 {
-            border-bottom-color: #27ae60;
             color: #2ecc71;
+            text-align: center;
+            border-bottom: 1px solid #2ecc71;
+            padding-bottom: 10px;
         }
         #osiride .storia {
-            background-color: #060d0a;
+            background-color: #05130e;
             border: 1px solid #27ae60;
-            color: #d0f0c0;
+            color: #d4efdf;
         }
 
-        /* Sezione Anubi: Tonalità scura/notturna */
+        /* 6. Anubi: Tonalità viola scuro / mistero della notte */
         #anubi {
-            background-color: #18141c;
-            border: 1px solid #8e44ad;
+            background-color: #1a1024;
+            border: 2px solid #9b59b6;
         }
         #anubi h2 {
-            border-bottom-color: #8e44ad;
             color: #bb8fce;
+            text-align: center;
+            border-bottom: 1px solid #9b59b6;
+            padding-bottom: 10px;
         }
         #anubi .storia {
-            background-color: #0d0a10;
+            background-color: #0e0814;
             border: 1px solid #8e44ad;
-            color: #e8daef;
+            color: #f4ecf7;
         }
 
-        /* Sezione Iside: Tonalità magica blu notte e oro */
+        /* 7. Iside: Tonalità blu notte / magia e cielo */
         #iside {
-            background-color: #101522;
-            border: 1px solid #2980b9;
+            background-color: #0f162b;
+            border: 2px solid #3498db;
         }
         #iside h2 {
-            border-bottom-color: #2980b9;
-            color: #5499c7;
+            color: #5dade2;
+            text-align: center;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 10px;
         }
         #iside .storia {
-            background-color: #080a10;
+            background-color: #070a16;
             border: 1px solid #2980b9;
-            color: #d4e6f1;
+            color: #ebf5fb;
         }
 
         footer {
             padding: 20px;
             text-align: center;
             border-top: 2px solid #d4af37;
-            background-color: #14100c;
+            background-color: #1a140d;
+            color: #d4af37;
+            margin-top: 40px;
         }
 
         @media (max-width: 600px) {

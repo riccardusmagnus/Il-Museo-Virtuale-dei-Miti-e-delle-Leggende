@@ -20,45 +20,51 @@
             scroll-behavior: smooth;
         }
 
+        /* STILE GENERALE COMPLETAMENTE RINNOVATO (TEMA EGIZIO / BRONZO) */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #f3e5ab;
-            background-color: #0c0a08;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font più moderno */
+            line-height: 1.7;
+            color: #f4d06f; /* Testo color sabbia/ambra */
+            background-color: #0b0907; /* Sfondo deserto notturno molto scuro */
         }
 
         header {
-            padding: 40px 20px;
+            padding: 45px 20px;
             text-align: center;
-            border-bottom: 3px solid #d4af37;
-            background-color: #1a140d;
+            border-bottom: 3px solid #cd7f32; /* Bordo color bronzo */
+            background: linear-gradient(to bottom, #1c140d, #0b0907);
         }
 
         h1, h2, h3 {
-            font-family: Georgia, serif;
+            color: #e59866; /* Colore rame/terracotta calda */
+            font-family: 'Times New Roman', Times, serif;
         }
 
         h1 {
-            font-size: 2.5rem;
-            color: #ffd700;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            color: #f39c12;
         }
 
         nav {
             padding: 15px;
             text-align: center;
-            border-bottom: 2px solid #d4af37;
-            background-color: #14100c;
+            border-bottom: 2px solid #cd7f32;
+            background-color: #140f0a;
         }
 
         nav a {
-            margin: 10px;
-            color: #ffd700;
+            margin: 12px;
+            color: #f4d06f;
             text-decoration: none;
             font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
         }
 
         nav a:hover {
+            color: #e59866;
             text-decoration: underline;
         }
 
@@ -68,17 +74,27 @@
             margin: auto;
         }
 
-        /* Stile di base per le sezioni */
         section {
             padding: 35px 20px;
             margin: 30px 0;
-            border-radius: 12px;
+            border-radius: 10px;
+            background-color: #120e0a;
+            border: 1px solid #cd7f32; /* Cornice in bronzo per tutte le sezioni */
+        }
+
+        h2 {
+            text-align: center;
+            border-bottom: 2px solid #cd7f32;
+            padding-bottom: 12px;
+            margin-top: 0;
         }
 
         .introduzione, .storia, .scheda {
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
+            background-color: #18120d;
+            border: 1px solid #a0522d; /* Bordo color terra bruciata */
         }
 
         .griglia {
@@ -89,137 +105,15 @@
 
         .scheda h3 {
             margin-top: 0;
-        }
-
-        /* ========================================== */
-        /* STILI UNICI E DIFFERENTI PER OGNI SEZIONE  */
-        /* ========================================== */
-
-        /* 1. Introduzione: Sabbia scura e oro */
-        .sezione-intro {
-            background-color: #1c150c;
-            border: 2px solid #d4af37;
-        }
-        .sezione-intro h2 {
-            color: #ffd700;
-            text-align: center;
-            border-bottom: 1px solid #d4af37;
-            padding-bottom: 10px;
-        }
-        .sezione-intro .introduzione {
-            background-color: #140f08;
-            border: 1px solid #c29b38;
-            color: #f3e5ab;
-        }
-
-        /* 2. Dei: Tonalità ambrata calda */
-        #dei {
-            background-color: #241a0e;
-            border: 2px solid #e67e22;
-        }
-        #dei h2 {
             color: #f39c12;
-            text-align: center;
-            border-bottom: 1px solid #e67e22;
-            padding-bottom: 10px;
-        }
-        #dei .scheda {
-            background-color: #161008;
-            border: 1px solid #d35400;
-            color: #fdedec;
-        }
-
-        /* 3. Ra: Tonalità fuoco / sole luminoso */
-        #ra {
-            background-color: #2c160a;
-            border: 2px solid #ff5722;
-        }
-        #ra h2 {
-            color: #ff9800;
-            text-align: center;
-            border-bottom: 1px solid #ff5722;
-            padding-bottom: 10px;
-        }
-        #ra .storia {
-            background-color: #180c05;
-            border: 1px solid #e64a19;
-            color: #ffe0b2;
-        }
-
-        /* 4. Creazione: Tonalità pietra / azzurro fiume Nilo */
-        #creazione {
-            background-color: #0f1c24;
-            border: 2px solid #00bcd4;
-        }
-        #creazione h2 {
-            color: #00e5ff;
-            text-align: center;
-            border-bottom: 1px solid #00bcd4;
-            padding-bottom: 10px;
-        }
-        #creazione .scheda {
-            background-color: #071015;
-            border: 1px solid #00838f;
-            color: #e0f7fa;
-        }
-
-        /* 5. Osiride: Tonalità oltretomba verde giada */
-        #osiride {
-            background-color: #0b2218;
-            border: 2px solid #2ecc71;
-        }
-        #osiride h2 {
-            color: #2ecc71;
-            text-align: center;
-            border-bottom: 1px solid #2ecc71;
-            padding-bottom: 10px;
-        }
-        #osiride .storia {
-            background-color: #05130e;
-            border: 1px solid #27ae60;
-            color: #d4efdf;
-        }
-
-        /* 6. Anubi: Tonalità viola scuro / mistero della notte */
-        #anubi {
-            background-color: #1a1024;
-            border: 2px solid #9b59b6;
-        }
-        #anubi h2 {
-            color: #bb8fce;
-            text-align: center;
-            border-bottom: 1px solid #9b59b6;
-            padding-bottom: 10px;
-        }
-        #anubi .storia {
-            background-color: #0e0814;
-            border: 1px solid #8e44ad;
-            color: #f4ecf7;
-        }
-
-        /* 7. Iside: Tonalità blu notte / magia e cielo */
-        #iside {
-            background-color: #0f162b;
-            border: 2px solid #3498db;
-        }
-        #iside h2 {
-            color: #5dade2;
-            text-align: center;
-            border-bottom: 1px solid #3498db;
-            padding-bottom: 10px;
-        }
-        #iside .storia {
-            background-color: #070a16;
-            border: 1px solid #2980b9;
-            color: #ebf5fb;
         }
 
         footer {
-            padding: 20px;
+            padding: 25px;
             text-align: center;
-            border-top: 2px solid #d4af37;
-            background-color: #1a140d;
-            color: #d4af37;
+            border-top: 3px solid #cd7f32;
+            background-color: #140f0a;
+            color: #cd7f32;
             margin-top: 40px;
         }
 
@@ -252,7 +146,7 @@
 
 <main>
 
-    <section class="sezione-intro">
+    <section>
         <div class="introduzione">
             <h2>Il mondo dei miti egizi</h2>
             <p>
@@ -267,6 +161,11 @@
     <section id="dei">
         <h2>Le 12 divinità principali</h2>
         <img src="immagini/egizi-gen.jpg" alt="Divinità egizie">
+        <style>
+          #dei {
+            text-align: center;
+          }
+        </style>
 
         <div class="griglia">
             <article class="scheda">

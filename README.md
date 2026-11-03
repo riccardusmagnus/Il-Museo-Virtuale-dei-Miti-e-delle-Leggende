@@ -9,3 +9,4 @@ impostare 3 divinità e storie per proprio pantheon
 dachel: Grechi
 alexandru: Egizi Hentai
 kevin: Norreni
+lavoro finito e mandato
